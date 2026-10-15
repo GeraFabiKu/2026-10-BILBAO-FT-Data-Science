@@ -1,3 +1,5 @@
+#en funciones solo debe quedar las funciones, sin input, sin pruebas para que no se ejecute nada. 
+
 def conv_num_dia (num):
     if num == 1:
         return "Lunes"
@@ -14,10 +16,7 @@ def conv_num_dia (num):
     if num == 7:
         return "Domingo"
 
-Dias = [1, 2, 3, 4, 5, 6, 7]
 
-for i in Dias:
-    print(conv_num_dia(i))
 
 
 
@@ -30,7 +29,7 @@ def num_fila_piram(fila):
         # Cambia de línea
         print()
 
-num_fila_piram(10)
+
 
 
 def comp(num1, num2):
@@ -41,7 +40,7 @@ def comp(num1, num2):
     else:
         print(f"{num1} es menor que {num2}")
 
-comp(7, 1)
+
 
 
 
@@ -53,9 +52,7 @@ def cont_letras(texto, letra):
             contador = contador + 1
 
     return contador
-texto = input("Texto: ")
-letra = input("Letra: ")
-print(cont_letras(texto,letra))
+
 
 
 def unic(texto):
@@ -69,7 +66,7 @@ def unic(texto):
 
     return diccionario
 
-print(unic("holaaa"))
+
 
 
 
@@ -83,14 +80,7 @@ def mod_elem(lista,comando,elemento):
                 print("comando erroneo")               
         return(lista)
 
-lista = [1,2,3,4]
-comando = "add"
-elemento = 3
 
-print(lista)
-print(mod_elem(lista,comando,elemento))
-print(mod_elem(lista,"add",5))
-print(mod_elem(lista,"remove",5))
 
 
 
@@ -100,9 +90,7 @@ def num_arb_pal(palabras):
 
     return frase
  
-palabras = ["gerardo", "mateo", "que", "tal", "estais"]
-frase = num_arb_pal(palabras)
-print(frase)
+
 
 
 
@@ -115,7 +103,7 @@ def fibonacci(n):
 
     return a
 
-print(fibonacci(8))
+
 
 
 
@@ -132,17 +120,3 @@ def area_circulo(radio):
 
 
 
-# Dos círculos de radio 10 + un triángulo de base 3 y altura 7
-resultado1 = 2 * area_circulo(10) + area_triangulo(3, 7)
-
-# Un cuadrado de lado 10 + un círculo de radio 4 + dos círculos de radio 6
-# + 5 triángulos de base 2 y altura 4
-resultado2 = (
-    area_cuadrado(10)
-    + area_circulo(4)
-    + 2 * area_circulo(6)
-    + 5 * area_triangulo(2, 4)
-)
-
-print(resultado1)
-print(resultado2)

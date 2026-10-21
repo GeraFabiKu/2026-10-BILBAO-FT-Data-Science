@@ -89,7 +89,7 @@ while vivas[0] > 0 and vivas[1] > 0:
         LETRAS.index transforma una letra en índice de fila. 
         int convierte el número introducido en índice de columna.'''
 
-        # con esto muestro mi radar y mi flota
+        # con esto recorro dos tableros y muestro el titulo correspondiente en mi radar y mi flota
         for titulo, tab in [("MI RADAR (lo que sé de la máquina)", radares[0]),
                             ("MI FLOTA", tableros[0])]:
             

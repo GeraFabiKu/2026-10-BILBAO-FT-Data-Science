@@ -310,3 +310,7 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# Archivos grandes
+powerbi/CURSO POWER BI.mp4
+powerbi/dublinbikes_20181001_20190101.csv
